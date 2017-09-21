@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>고객센터 메인</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button#mybutton1").click(function(){
+			$("#mydiv1").slideToggle(200);
+		})
+	});
+	$(document).ready(function(){
+		$("button#mybutton2").click(function(){
+			$("#mydiv2").slideToggle(200);
+		})
+	});
+	$(document).ready(function(){
+		$("button#mybutton3").click(function(){
+			$("#mydiv3").slideToggle(200);
+		})
+	});
+	$(document).ready(function(){
+	    $("button#mybutton1").click(function(){
+	        $("#p1").text() === "▼" ? $("#p1").text("▲") : $("#p1").text("▼");
+	    })
+	});
+	$(document).ready(function(){
+	    $("button#mybutton2").click(function(){
+	        $("#p2").text() === "▼" ? $("#p2").text("▲") : $("#p2").text("▼");
+	    })
+	});
+	$(document).ready(function(){
+	    $("button#mybutton3").click(function(){
+	        $("#p3").text() === "▼" ? $("#p3").text("▲") : $("#p3").text("▼");
+	    })
+	});
+</script>
+<style type="text/css">
+	.title{
+	border-style: solid;   /* 실선 */
+	border-color: #F1C40F; /* 선 색깔 */
+	margin: 10px auto; /* 가운데 정렬 기능, 20px: 위 아래, auto: 오른쪽 왼쪽*/
+	background-color: #F1C40F;
+	color:#2C3E50;
+	text-align:center;
+	}
+	#mydiv1{
+	display:none;
+	background-color: #E1FAFC;
+	}
+	#mybutton1{
+	background-color:white;
+	border: 0px;
+	cursor: pointer;
+	text-align: right;
+	}
+	#mydiv2{
+	display:none;
+	background-color: #E1FAFC;
+	}
+	#mybutton2{
+	background-color:white;
+	border: 0px;
+	cursor: pointer;
+	text-align: right;
+	}
+	#mydiv3{
+	display:none;
+	background-color: #E1FAFC;
+	}
+	#mybutton3{
+	background-color:white;
+	border: 0px;
+	cursor: pointer;
+	text-align: right;
+	}
+</style>
+</head>
+<body>
+	<div class="title">
+		<h1>FAQ 자주묻는질문</h1>
+	</div>
+	<br>
+환불방법&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button id="mybutton1"><p id="p1">▼</p></button>
+<br>
+<br>
+	<div id="mydiv1">
+		111
+	</div>
+<hr>
+회원가입방법 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button id="mybutton2"><p id="p2">▼</p></button>
+<br>
+<br>
+	<div id="mydiv2">
+		222
+	</div>
+<hr>
+무슨무슨방법 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button id="mybutton3"><p id="p3">▼</p></button>
+<br>
+<br>
+	<div id="mydiv3">
+		333
+	</div>
+<hr>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/59ba33f54854b82732feff4e/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+	})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

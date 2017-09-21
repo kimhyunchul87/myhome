@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+table{
+  margin: 0 auto;            /* 테이블 가운데 정렬 */
+  border-color: #AAAAAA;     /* 테이블 외곽선 색깔 */ 
+  border-width: 1px;         /* 테이블 외곽선 두께 */ 
+  border-style: solid;       /* 테이블 외곽선 스타일 */
+  border-collapse: collapse; /* 컬럼의 외곽선을 하나로 결합 */	
+}
+th{
+  border-color: #AAAAAA;     /* 테이블 외곽선 색깔 */ 
+  border-width: 1px;         /* 테이블 외곽선 두께 */ 
+  border-style: solid;       /* 테이블 외곽선 스타일 */
+  color: black;            /* 글자 색 */ 
+  background-color: #ededed; /* 배경 색 */
+  padding-top: 5px;              /* 셀 내부 간격 */
+  padding-bottom : 5px;
+  text-align: center;
+}
+td{
+  border-color: #AAAAAA;     /* 테이블 외곽선 색깔 */ 
+  border-width: 1px;         /* 테이블 외곽선 두께 */ 
+  border-style: solid;       /* 테이블 외곽선 스타일 */
+  color: #000000;            /* 글자 색 */ 
+  background-color: #FFFFFF; /* 배경 색 */
+  padding: 5px;              /* 셀 내부 간격 */
+ 
+}	
+
+#write{
+	text-align:center;
+}
+#search{
+	text-align:center;
+}
+</style>
+
+
+</head>
+<body>
+  <TABLE>
+    <TR>
+      <TH>제목</TH>
+      <TD>제목입니다</TD>
+    </TR>
+    <TR>
+      <TH>작성자</TH>
+      <TD>작성자입니다</TD>
+    </TR>
+    <TR>
+      <th>내용</th>
+      <TD colspan="2">내용입니다</TD>
+    </TR>
+  </TABLE>
+  <br>
+  
+  <div class="bottom" style="text-align: center;">
+  	 <input type='button' value='수정'>
+  	 <input type='button' value='삭제'>
+  </div>
+</body>
+</html>

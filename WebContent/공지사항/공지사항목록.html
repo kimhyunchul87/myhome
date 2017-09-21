@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>고객게시판</title>
+<style type="text/css">
+table{
+  margin: 0 auto;            /* 테이블 가운데 정렬 */
+  border-color: #AAAAAA;     /* 테이블 외곽선 색깔 */ 
+  border-width: 1px;         /* 테이블 외곽선 두께 */ 
+  border-style: solid;       /* 테이블 외곽선 스타일 */
+  border-collapse: collapse; /* 컬럼의 외곽선을 하나로 결합 */	
+  width:100%;
+}
+th{
+  border-color: #BDC3C7;     /* 테이블 외곽선 색깔 */ 
+  border-width: 1px;         /* 테이블 외곽선 두께 */ 
+  border-style: solid;       /* 테이블 외곽선 스타일 */
+  color: #fff;;            /* 글자 색 */ 
+  background-color: #ACA46F; /* 배경 색 */
+  padding-top: 5px;              /* 셀 내부 간격 */
+  padding-bottom : 5px;
+  text-align: center;
+}
+td{
+  border-color: #BDC3C7;     /* 테이블 외곽선 색깔 */ 
+  border-width: 1px;         /* 테이블 외곽선 두께 */ 
+  border-style: solid;       /* 테이블 외곽선 스타일 */
+  color: #000000;            /* 글자 색 */ 
+  background-color: #FFFFFF; /* 배경 색 */
+  padding: 5px;              /* 셀 내부 간격 */
+ 
+}	
+.title{
+	text-align: center;
+	border-style: solid;   /* 실선 */
+	border-width: 1px;     /* 선 두께 */
+	border-color: #5659C9; /* 선 색깔 */
+	color: #ECF0F1;      /* 글자 색깔 */
+	background-color:#5659C9;
+	margin: 20px auto; /* 가운데 정렬 기능, 20px: 위 아래, auto: 오른쪽 왼쪽*/
+}
+#bottom{
+	text-align:center;
+}
+#search{
+	text-align:center;
+	border:1px solid #8BCBDE;
+	background-color: #8BCBDE;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-top:3px solid #AE44C8;
+}
+</style>
+
+</head>
+<body>
+<div class="title">
+	<h1>공지사항</h1>
+</div>
+
+<!-- *****************************search************************** -->
+<!-- *****************************search************************** -->
+
+<div id="search">
+<input type="text" name="word" value="검색">
+<button type="button">검색</button>
+</div>
+<br>
+  
+<table>
+   <tr>
+		<th style="width:5%">번호</th>
+		<th style="width:50%">제목</th>
+	</tr>
+	<tr>
+		<td style="text-align:center;">no.</td>
+		<td style="padding-left: 5px;">title</td>
+	</tr>
+</table>
+<br>
+
+<div id="bottom">
+<input type="button"name="write" value="글쓰기" onclick="location.href='./공지사항쓰기.html'">
+<button onclick="history.back()">뒤로가기</button>
+<br>
+<br>
+<< 1 2 3 4 5 >>
+</div>
+<br>
+</body>
+</html>

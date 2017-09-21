@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>map</title>
+<style type="text/css">
+	body{
+	padding: 0;
+	margine:0;
+	}
+    #map {
+     height: 400px;
+     width: 100%;
+    }
+	#pop{
+		width:300px;
+		height:400px;
+		background: red; color: yellow;
+		position: absolute;
+		top:10px;
+		left:100px;
+		text-align: center;
+		border:2px solid green;
+	}
+	.title{
+	border-style: solid;   /* 실선 */
+	border-color: #4CD4B0; /* 선 색깔 */
+	margin: 10px auto; /* 가운데 정렬 기능, 20px: 위 아래, auto: 오른쪽 왼쪽*/
+	background-color: #4CD4B0;
+	}
+	
+    </style>
+</head>
+<body>
+<!-- *************************map********************* -->
+<!-- *************************map********************* -->
+  	<div class="title">
+    	<h2 style="color: #FFFCE6;">오프라인매장안내</h2>
+    </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var store = {lat: 37.569531, lng: 126.985922};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: store
+        });
+        var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 37.569531, lng: 126.985922},
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkYXqQbK4unTNp-sY2UrbPpqajGvi10eQ&callback=initMap">
+    </script>
+<br>    
+<strong style="color:#EDD834;">오프라인매장</strong> : 서울특별시 종로구 관철동 13-13<br>
+<strong style="color:#EDD834;">고객센터</strong> : 1644-1644
+ 
+
+</body>
+</html>

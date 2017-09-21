@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+h1{
+	text-align: center;
+}
+table{
+  margin: 0 auto;            /* 테이블 가운데 정렬 */
+  border-collapse: collapse; /* 컬럼의 외곽선을 하나로 결합 */
+	
+}
+th{
+  border-color: #AAAAAA;     /* 테이블 외곽선 색깔 */ 
+  color: black;            /* 글자 색 */ 
+  padding-top: 5px;              /* 셀 내부 간격 */
+  padding-bottom : 5px;
+  text-align: left;
+}
+td{
+  color: #000000;            /* 글자 색 */ 
+  background-color: #FFFFFF; /* 배경 색 */
+}	
+</style>
+<script type="text/javascript">
+function inCheck(f){
+	if(f.title.value==""){
+		alert("제목을 입력하세요");
+		f.title.focus();
+		return false;
+	}
+	if(f.wname.value==""){
+		alert("작성자를 입력하세요");
+		f.wname.focus();
+		return false;
+	}
+}
+</script>
+
+</head>
+<body>
+<form name='frm' method='POST' action='./게시판Proc.html' onsubmit="return inCheck(this)">
+	<table>
+	   <tr>
+			<td><input type="text" name="title" placeholder="제목"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="wname" placeholder="작성자"></td>
+		</tr>
+		<tr>
+			<td><textarea name="content" cols="50" rows="12" placeholder="내용"></textarea></td>
+		</tr>
+	</table>
+<br>
+
+<DIV class='bottom' style="text-align: center;"> 
+	<input type='submit' value='등록'> 
+	<input type='button' value='취소' onclick="history.back()">
+</DIV>
+</body>
+</html>
